@@ -4,6 +4,11 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
+# Download NLTK resources (runs only if not already available)
+nltk.download("stopwords", quiet=True)
+nltk.download("wordnet", quiet=True)
+nltk.download("omw-1.4", quiet=True)
+
 stop_words = set(stopwords.words("english"))
 lemmatizer = WordNetLemmatizer()
 
